@@ -77,7 +77,7 @@ function Content5() {
         </div>
         <Image
           className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] lg:block hidden"
-          src="/Images/AboutUs/imgcontent51.png"
+          src="/../Images/AboutUs/imgcontent51.png"
           width={343}
           height={261}
           alt=""
