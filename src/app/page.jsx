@@ -397,46 +397,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <div className="bg-no-repeat bg-[url('/Images/bgContact.png')] lg:hidden w-full py-8 bg-right">
-        <div className="m-[15px]">
-          <div>
-            <div className={lora.className}>
-              <h1 className="font-[700] text-[24px] text-center leading-[61.44px] text-[#FA541C]">
-                Liên Hệ
-              </h1>
-            </div>
-            <div className="items ">
-              <p className="text-white text-[16px] font-normal leading-[28px] lg:w-[395px]">
-                <FontAwesomeIcon icon={faEnvelope} />
-                <span className="ml-5">dvkh.trueconnect@gmail.comcom</span>
-              </p>
-              <div className="text-white text-[16px] font-normal leading-[28px] lg:w-[395px] flex">
-                <img
-                  className="inline"
-                  alt=""
-                  src="/Images/icon/Location.svg"
-                />
-
-                <span className="ml-5">
-                  80, 69b/22/45 Hoang Van Thai, Khuong Trung Thanh Xuan, Ha Noi
-                </span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <Input placeholder={"Họ tên"} />
-            <Input placeholder={"Email của bạn"} />
-            <Input placeholder={"Sô điện thoại"} />
-            <Input placeholder={"Ghi chú "} />
-            <div className="flex justify-center">
-              <button className="bg-[#0DC5AE] text-[15px] leading-[26px] font-[600]  text-white p-3  mt-8 rounded-[8px]">
-                Gửi thông tin
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <Footer />
     </main>
   );
