@@ -1,10 +1,40 @@
 /* eslint-disable react/jsx-no-undef */
+"use client";
 import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import styled from "styled-components";
 
 function Header() {
+  const pathname = usePathname();
+  const menu = [
+    {
+      name: "Trang chủ",
+      path: "/",
+    },
+    {
+      name: "Về chúng tôi",
+      path: "/AboutUs",
+    },
+    {
+      name: "Sản phẩm và dịch vụ",
+      path: "/ProductAndServices",
+    },
+    {
+      name: "Tin tức",
+      path: "/News",
+    },
+    {
+      name: "Trải nghiệm",
+      path: "/Experient",
+    },
+    {
+      name: "Liên hệ",
+      path: "/Contact",
+    },
+  ];
   return (
     <header>
       <nav className="lg:flex items-center hidden">
@@ -12,24 +42,14 @@ function Header() {
           <Image src="/Images/Logo.png" alt="" width="231" height="60" />
         </div>
         <ul className="flex justify-around flex-1">
-          <li className="text-[#FF0054]">
-            <Link href={"/"}>Trang chủ</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Về chúng tôi</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Sản phẩm và dịch vụ</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Tin tức</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Trải nghiệm</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Liên hệ</Link>
-          </li>
+          {menu?.map((item) => (
+            <MenuItem
+              key={item.path}
+              $activeTab={item.path === pathname ? "true" : "false"}
+            >
+              <Link href={item.path}>{item.name}</Link>
+            </MenuItem>
+          ))}
         </ul>
       </nav>
 
@@ -47,3 +67,6 @@ function Header() {
 }
 
 export default Header;
+const MenuItem = styled.li`
+  color: ${(prop) => (prop.$activeTab === "true" ? "#FF0054" : "black")};
+`;
