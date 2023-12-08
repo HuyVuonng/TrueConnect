@@ -5,7 +5,7 @@ function CardFounder({ name, des, img }) {
     <div className="w-fit ">
       <Image
         className="lg:mt-0  rounded-[24px] h-[366px]"
-        src={`/../Images/AboutUs/${img}`}
+        src={`/Images/AboutUS/${img}`}
         width={270}
         height={366}
         alt=""
