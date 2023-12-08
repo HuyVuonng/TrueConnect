@@ -33,7 +33,7 @@ function Content1() {
           </span>
         </div>
       </div>
-      <div className=" mt-11 bg-no-repeat bg-[url('/../Images/AboutUs/img1.png')] rounded-[8px] w-full  h-[648px] bg-cover flex justify-end">
+      <div className=" mt-11 bg-no-repeat bg-[url('/Images/AboutUS/img1.png')] rounded-[8px] w-full  h-[648px] bg-cover flex justify-end">
         <div className="lg:w-[550px] w-full h-full bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,1))] flex justify-center items-center">
           <div className="flex  flex-col w-[285px] lg:w-fit">
             <div>

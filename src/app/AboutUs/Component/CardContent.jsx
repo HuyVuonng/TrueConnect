@@ -14,7 +14,7 @@ function CartContent({ img, title, content, list }) {
       {img && (
         <Image
           className="float-right"
-          src={`/../Images/AboutUs/${img}`}
+          src={`/Images/AboutUS/${img}`}
           width={122}
           height={122}
           alt=""
