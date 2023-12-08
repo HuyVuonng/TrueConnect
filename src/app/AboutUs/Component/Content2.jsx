@@ -78,21 +78,21 @@ function Content2() {
       <div className="lg:flex lg:justify-between mt-8">
         <Image
           className="mt-5 lg:mt-0"
-          src="/Images/AboutUs/imgcontent21.png"
+          src="/../Images/AboutUs/imgcontent21.png"
           width={343}
           height={261}
           alt=""
         />
         <Image
           className="mt-5 lg:mt-0"
-          src="/Images/AboutUs/imgcontent22.png"
+          src="/../Images/AboutUs/imgcontent22.png"
           width={343}
           height={261}
           alt=""
         />
         <Image
           className="mt-5 lg:mt-0"
-          src="/Images/AboutUs/imgcontent23.png"
+          src="/../Images/AboutUs/imgcontent23.png"
           width={343}
           height={261}
           alt=""

@@ -43,7 +43,7 @@ function Content3() {
         </div>
         <Image
           className="mt-5 lg:mt-0 translate-y-[20%]"
-          src="/Images/AboutUs/imgcontent31.png"
+          src="/../Images/AboutUs/imgcontent31.png"
           width={358}
           height={269}
           alt=""
@@ -52,7 +52,7 @@ function Content3() {
       <div className="flex mt-14 items-end">
         <Image
           className="mt-5 lg:mt-0"
-          src="/Images/AboutUs/muiten.png"
+          src="/../Images/AboutUs/muiten.png"
           width={51}
           height={42}
           alt=""
@@ -96,7 +96,7 @@ function Content3() {
         <div className="flex mt-20 items-end">
           <Image
             className="mt-5 lg:mt-0"
-            src="/Images/AboutUs/muiten.png"
+            src="/../Images/AboutUs/muiten.png"
             width={51}
             height={42}
             alt=""
