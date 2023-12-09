@@ -55,7 +55,7 @@ function Content6() {
 
   return (
     <div className="bg-no-repeat bg-[url('/Images/AboutUS/BackgroundContent6.png')]  w-full bg-cover lg:p-11 pb-10">
-      <div className="lg:w-[1200px] pt-10 lg:m-auto m-[15px] lg:flex gap-6  items-center">
+      <div className="lg:w-[1200px] pt-10 lg:m-auto m-[15px] flex lg:flex-row flex-col gap-6 items-center">
         <div className="lg:w-[368px] self-start">
           <h1 className="font-bold lg:text-[40px] text-[24px] text-center lg:text-start leading-[51.2px] text-white">
             Đội ngũ sáng lập
@@ -66,8 +66,8 @@ function Content6() {
             phá và hiệu quả cho khách hàng.
           </p>
         </div>
-        <WrapperSlider className="lg:w-[calc(1200px_-_368px)] cursor-pointer mt-4 lg:mt-0">
-          <Slider {...sliderSettings} className="flex items-center">
+        <WrapperSlider className="lg:w-[calc(1200px_-_368px)] w-[270px] cursor-pointer mt-4 lg:mt-0">
+          <Slider {...sliderSettings} className="flex items-center ">
             <CardFounder
               name={"Vũ Trường Giang"}
               des={"Founder"}

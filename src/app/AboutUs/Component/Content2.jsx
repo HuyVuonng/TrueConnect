@@ -69,7 +69,7 @@ function Content2() {
         Hệ sinh thái TrueConnect có thể được sử dụng hoàn toàn trên điện thoại
         và bao gồm các sản phẩm, giải pháp và dịch vụ sau:
       </p>
-      <div className="lg:flex lg:justify-between mt-8">
+      <div className="flex lg:justify-between mt-8 lg:flex-row flex-col items-center lg:items-start">
         <Image
           className="mt-5 lg:mt-0"
           src="/Images/AboutUS/imgcontent21.png"
