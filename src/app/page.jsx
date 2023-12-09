@@ -38,7 +38,7 @@ export default function Home() {
           <Header />
           <div className=" pb-3 lg:flex lg:items-center lg:gap-[6rem]">
             <div className="content1-block1 lg:w-[460px] w-fit ">
-              <p className="text-[32px] text-center">
+              <p className="text-[32px] text-center lg:text-start">
                 <span className="text-[#0DC5AE]">True</span>
                 <span className="text-[#FF0054] ">Connect</span>
               </p>
