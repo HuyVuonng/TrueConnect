@@ -9,7 +9,7 @@ const lora = Lora({
 });
 function Content5() {
   return (
-    <div>
+    <div className="py-10">
       <Title value={"GIÁ TRỊ CỐT LÕI"} />
 
       <div className="relative">

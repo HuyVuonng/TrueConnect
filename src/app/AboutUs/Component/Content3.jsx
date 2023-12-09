@@ -31,7 +31,7 @@ function Content3() {
   const [activeTab, setActiveTab] = useState(2);
   return (
     <div className="pb-20">
-      <div className="flex justify-between mb-6 lg:flex-row flex-col">
+      <div className="flex lg:justify-between mb-6 lg:flex-row flex-col items-center lg:items-start">
         <div className="lg:self-end">
           <Title value={"TẦM NHÌN VÀ SỨ MỆNH"} />
         </div>
