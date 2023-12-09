@@ -1,4 +1,5 @@
 import { Lora } from "next/font/google";
+import Title from "../../Components/Title";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -7,14 +8,7 @@ const lora = Lora({
 function Content1() {
   return (
     <div className="mt-10 pb-20">
-      <div className={lora.className}>
-        <div className="lg:inline-block flex items-center flex-col">
-          <h1 className="font-[700] text-[#0DC5AE] text-[32px] leading-[51.2px]">
-            Về chúng tôi
-          </h1>
-          <div className="w-[48%] border-[#FF0054] border-[2px]"></div>
-        </div>
-      </div>
+      <Title value={"Về chúng tôi"} />
       <div className="flex justify-between mt-5 flex-col lg:flex-row">
         <div className="lg:w-[50%]">
           <div className={lora.className}>

@@ -3,6 +3,7 @@ import { Lora } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
 import styled from "styled-components";
+import Title from "../../Components/Title";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -29,14 +30,7 @@ function Content2() {
   const [activeTab, setActiveTab] = useState(3);
   return (
     <div className="lg:pb-5 pb-10">
-      <div className={lora.className}>
-        <div className="lg:inline-block flex items-center flex-col">
-          <h1 className="font-[700] text-[#0DC5AE] text-[32px] leading-[51.2px]">
-            Giới thiệu
-          </h1>
-          <div className="w-[48%] border-[#FF0054] border-[2px]"></div>
-        </div>
-      </div>
+      <Title value={"Giới thiệu"} />
       <div className="lg:flex hidden">
         <span className={lora.className}>
           <span className="lg:font-bold text-[128px] leading-none">T</span>
