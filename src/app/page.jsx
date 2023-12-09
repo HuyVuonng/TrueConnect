@@ -38,7 +38,7 @@ export default function Home() {
           <Header />
           <div className=" pb-3 lg:flex lg:items-center lg:gap-[6rem]">
             <div className="content1-block1 lg:w-[460px] w-fit ">
-              <p className="text-[32px]">
+              <p className="text-[32px] text-center">
                 <span className="text-[#0DC5AE]">True</span>
                 <span className="text-[#FF0054] ">Connect</span>
               </p>
@@ -64,10 +64,10 @@ export default function Home() {
       <div className="content2 lg:w-[1200px] lg:m-auto m-[15px] py-[100px]">
         <div className="lg:flex lg:justify-around">
           <div className="content2-block1 lg:w-[536px] ">
-            <h2 className="text-[32px] text-[#0DC5AE] font-[700]">
+            <h2 className="lg:text-[32px] text-[24px] text-[#0DC5AE] font-[700]">
               Công ty Cổ phần Công nghệ <TrueConnect />
             </h2>
-            <p className="font-normal my-5 leading-[30px] text-[16px]">
+            <p className="font-normal my-5 leading-[30px] lg:text-[16px] text-[14px]">
               Chúng tôi hoạt động với mong muốn thúc đẩy quá trình kinh doanh và
               vận hành của Quý khách hàng bằng việc dễ dàng tiếp cận các công cụ
               Công nghệ thông tin phục vụ hệ thống từ quy mô siêu nhỏ (cá nhân)
@@ -112,7 +112,7 @@ export default function Home() {
             </div>
             <Link
               href={"/"}
-              className="text-[16px] flex gap-x-3 text-[#FF0054] float-right items-center"
+              className="lg:text-[16px] text-[14px] flex gap-x-3 text-[#FF0054] float-right items-center"
             >
               <span>Xem thêm</span>
               <FontAwesomeIcon className="w-[8px]" icon={faChevronRight} />

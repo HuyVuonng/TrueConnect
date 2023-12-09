@@ -6,9 +6,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styled from "styled-components";
+import NavMobile from "./NavMobile";
 
 function Header() {
-  const pathname = usePathname();
+  const handelShowNav = () => {
+    const nav = document.querySelector(".nav-mobile");
+    nav?.classList.add("w-fit");
+    nav?.classList.remove("w-0");
+    nav?.classList.add("p-6");
+    nav?.classList.remove("p-0");
+  };
+  const allpathname = usePathname();
+  const listPathname = allpathname.split("/");
+  const pathname = `/${listPathname[1]}`;
   const menu = [
     {
       name: "Trang chủ",
@@ -20,7 +30,7 @@ function Header() {
     },
     {
       name: "Sản phẩm và dịch vụ",
-      path: "/ProductAndServices",
+      path: "/productsAndServices",
     },
     {
       name: "Tin tức",
@@ -58,10 +68,15 @@ function Header() {
           <Image src="/Images/Logo.png" alt="" width="114" height="31" />
         </div>
         <div className="flex w-[80px] justify-around">
-          <FontAwesomeIcon className="w-[25px] h-[25px]" icon={faBars} />
+          <FontAwesomeIcon
+            className="w-[25px] h-[25px]"
+            icon={faBars}
+            onClick={handelShowNav}
+          />
           <FontAwesomeIcon className="w-[25px] h-[25px]" icon={faSearch} />
         </div>
       </nav>
+      <NavMobile menu={menu} />
     </header>
   );
 }

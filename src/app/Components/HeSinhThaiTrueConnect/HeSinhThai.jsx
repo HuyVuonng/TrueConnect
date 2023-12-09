@@ -38,20 +38,20 @@ function HeSinhThai() {
   return (
     <div className="wrapperContent3 bg-[#F9F0ED] py-10">
       <div className="content3 lg:w-[1200px] lg:m-auto m-[15px]">
-        <h2 className="text-[32px] text-[#0DC5AE] font-[700]">
+        <h2 className="lg:text-[32px] text-[24px] text-[#0DC5AE] font-[700]">
           Hệ sinh thái <TrueConnect />
         </h2>
 
         <div className="lg:flex lg:justify-around">
-          <div className="lg:w-[350px] lg:mt-[100px]">
+          <div className="lg:w-[350px] lg:mt-[100px] mt-[50px]">
             {list?.map((item) => (
               <WrapItem
                 key={item.id}
-                className="flex lg:justify-end  lg:h-[50px] border-l-2"
+                className="flex lg:justify-end   border-l-2"
                 $active={item.id === activeTab ? "true" : "false"}
               >
                 <div
-                  className="lg:w-[311px] lg:flex flex-1 items-center lg:ml-9 ml-6 text-[14px] p-4  lg:pl-[30px] cursor-pointer font-[600] leading-[30px]"
+                  className="lg:w-[311px] lg:flex flex-1 items-center lg:ml-9 ml-6 lg:text-[16px] text-[14px] p-4  lg:pl-[30px] cursor-pointer font-[600] leading-[30px]"
                   onClick={() => setActiveTab(item.id)}
                 >
                   <span>{item.title}</span>

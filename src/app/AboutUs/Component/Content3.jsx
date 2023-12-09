@@ -3,6 +3,7 @@ import { Lora } from "next/font/google";
 import Image from "next/image";
 import { useState } from "react";
 import styled from "styled-components";
+import Title from "../../Components/Title";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -32,15 +33,9 @@ function Content3() {
     <div className="pb-20">
       <div className="flex justify-between mb-6 lg:flex-row flex-col">
         <div className="lg:self-end">
-          <div className={lora.className}>
-            <div className="lg:inline-block flex items-center flex-col">
-              <h1 className="font-[700] text-[#0DC5AE] lg:text-[32px] text-[24px] leading-[51.2px]">
-                TẦM NHÌN VÀ SỨ MỆNH
-              </h1>
-              <div className="w-[48%] border-[#FF0054] border-[2px]"></div>
-            </div>
-          </div>
+          <Title value={"TẦM NHÌN VÀ SỨ MỆNH"} />
         </div>
+
         <Image
           className="mt-5 lg:mt-0 translate-y-[20%]"
           src="/Images/AboutUS/imgcontent31.png"

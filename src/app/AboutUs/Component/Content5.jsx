@@ -1,6 +1,7 @@
 import { Lora } from "next/font/google";
 import Image from "next/image";
-import CardContent5 from "./CartContent5";
+import CardContent5 from "./CardContent5";
+import Title from "../../Components/Title";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -9,14 +10,8 @@ const lora = Lora({
 function Content5() {
   return (
     <div>
-      <div className={lora.className}>
-        <div className="lg:inline-block flex items-center flex-col">
-          <h1 className="font-[700] text-[#0DC5AE] text-[32px] leading-[51.2px]">
-            GIÁ TRỊ CỐT LÕI
-          </h1>
-          <div className="w-[48%] border-[#FF0054] border-[2px]"></div>
-        </div>
-      </div>
+      <Title value={"GIÁ TRỊ CỐT LÕI"} />
+
       <div className="relative">
         <div className="mt-6 lg:flex">
           <div className="lg:flex justify-between">
